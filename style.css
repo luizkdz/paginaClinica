@@ -1,0 +1,147 @@
+@media(max-width:425px){
+    .linksTopo{
+        font-size:12px;
+    }
+    .conteudo{
+        height:200px;
+    }
+    header {
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .conteudo h1{
+        font-size:16px;
+    }
+    .card{
+        width:100%;
+    }
+    .sobreEspecialidades h1{
+        font-size:22px;
+    }
+}
+
+@media(max-width:768px){
+    .conteudo{
+        height:300px;
+    }
+    .listaImagem img{
+        display:none;
+    }
+    .card{
+        width:50%;
+    }
+    header {
+        display:flex;
+        flex-wrap:wrap;
+    }
+}
+@media(max-width:1024px){
+    .conteudo{
+        height:400px;
+    }
+    .card{
+        width:33%;
+    }
+    header {
+        display:flex;
+        flex-wrap:wrap;
+    }
+}
+
+body{
+    height:1024px;
+    color:#0000008c;
+    font-family:'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo{
+    height:500px;
+    background-size: cover;
+    background-image:url('assets/recepcao.png');
+    display:flex;
+    align-items: center;
+    width:100%;
+}
+.conteudo h1{
+    color:#fff;
+}
+
+header{
+    margin:0 auto;
+    background-color: aqua;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+
+nav ul{
+    display:flex;
+}
+nav li{
+    color:#fff;
+    margin:10px;
+    list-style-type: none;
+}
+
+nav li a{
+    text-decoration:none;
+}
+
+nav li a:hover{
+    color:green;
+}
+
+.sobreAClinica{
+    text-align: center;
+}
+.listaImagem{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerEspecialidades{
+    text-align: center;
+}
+
+.gridEspecialidades{
+    flex-wrap:wrap;
+    display:flex;
+    justify-content: space-around
+}
+.card{
+    border:1px solid grey;
+    display:flex;
+    flex-direction:column;
+    width:251px;
+}
+
+.card img{
+    box-shadow: 2px 2px 2px;
+    
+    width:250px;
+}
+.contato{
+    padding:40px;
+    text-align: center;
+}
+.contato a{
+    background-color:aqua;
+    border:1px solid aquamarine;
+    color:#fff;
+    padding:10px;
+    text-decoration: none;
+}
+.contato h1{
+    padding-top:20px;
+}
+
+footer{
+    padding:20px;
+    text-align:center;
+    background-color:darkolivegreen
+}
