@@ -18,6 +18,8 @@
     .sobreEspecialidades h1{
         font-size:22px;
     }
+  
+    
 }
 
 @media(max-width:768px){
@@ -34,6 +36,10 @@
         display:flex;
         flex-wrap:wrap;
     }
+    .linksEspecialidades{
+        display:flex;
+        flex-wrap: 1;
+    }
 }
 @media(max-width:1024px){
     .conteudo{
@@ -48,6 +54,14 @@
     }
 }
 
+header{
+    margin:0 auto;
+    background-color: aqua;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+}
+
 body{
     height:1024px;
     color:#0000008c;
@@ -55,32 +69,7 @@ body{
     margin: 0;
     padding: 0;
 }
-
-.conteudo{
-    height:500px;
-    background-size: cover;
-    background-image:url('assets/recepcao.png');
-    display:flex;
-    align-items: center;
-    width:100%;
-}
-.conteudo h1{
-    color:#fff;
-}
-
-header{
-    margin:0 auto;
-    background-color: aqua;
-    align-items: center;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-}
-
-
-
 nav ul{
-    padding:0;
     display:flex;
 }
 nav li{
@@ -97,53 +86,48 @@ nav li a:hover{
     color:green;
 }
 
-.sobreAClinica{
-    text-align: center;
-}
-.listaImagem{
+.container{
+    margin:0 auto;
     display:flex;
     justify-content: center;
-    align-items: center;
-}
-
-.containerEspecialidades{
-    text-align: center;
-}
-
-.gridEspecialidades{
     flex-wrap:wrap;
-    display:flex;
-    justify-content: space-around
-}
-.card{
-    border:1px solid grey;
-    display:flex;
-    flex-direction:column;
-    width:251px;
 }
 
-.card img{
-    box-shadow: 2px 2px 2px;
-    
-    width:250px;
+
+.container img{
+    width:200px;
+    height:150px;
 }
-.contato{
-    padding:40px;
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Define a cor para as linhas pares */
+  }
+
+tr:nth-child(odd){
+    background-color: bisque;
+}
+
+th{
+    background-color: aquamarine;
+    color: #fff;
+    padding:5px;
+}
+
+table{
     text-align: center;
-}
-.contato a{
-    background-color:aqua;
-    border:1px solid aquamarine;
-    color:#fff;
-    padding:10px;
-    text-decoration: none;
-}
-.contato h1{
-    padding-top:20px;
+    border-collapse: collapse;
+    width:50%;
 }
 
+.especialidades{
+    text-align:center;
+}
 footer{
     padding:20px;
     text-align:center;
     background-color:darkolivegreen
+}
+a{
+    text-decoration: none;
+    :visited
 }
